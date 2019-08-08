@@ -3,6 +3,7 @@ toDoInput = toDoForm.querySelector("input"),
 toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = "toDos";
+const toDos = [];
 
 function paintToDo(text){
     const li = document.createElement("li");
@@ -13,7 +14,10 @@ function paintToDo(text){
     li.appendChild(span);
     li.appendChild(delBtn);
     toDoList.appendChild(li);
-    
+    const toDoObj = {
+        text : text,
+        id : toDos.length + 1;
+    }
 }
 
 function handleSubmit(event){

@@ -5,19 +5,20 @@ const form = document.querySelector(".js-form"),
 const USER_LS = "currentUser",
   SHOWING_CN = "showing";
 
-function saveName(text){
+function saveName(text) {
   localStorage.setItem(USER_LS, text);
 }
 
-function handleSubmit(event){
+function handleSubmit(event) {
   event.preventDefault();
   const currentValue = input.value;
   painGreeting(currentValue);
   saveName(currentValue);
+  l;
 }
 
-function askForName(){
-  form.classList.add(SHOWING_CN)
+function askForName() {
+  form.classList.add(SHOWING_CN);
   form.addEventListener("submit", handleSubmit);
 }
 

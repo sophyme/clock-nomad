@@ -1,4 +1,4 @@
-const COORDS = "coords";
+const COORDS = 'coords';
 
 function handleGeoSuccess(position) {
   console.log(position);
@@ -20,5 +20,7 @@ function loadCoords() {
   }
 }
 
-function init() {}
+function init() {
+  loadCoords();
+}
 init();

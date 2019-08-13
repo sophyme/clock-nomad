@@ -1,24 +1,23 @@
 body {
   background-color: #2c3e50;
-  color: #000000;
-  transition: color 0.5s ease-in-out;
-  font-size: 30px;
 }
-.js-clock {
-  font-size: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.btn {
+  cursor: pointer;
 }
-.js-clock > div {
-  color: #353434;
-  background-color: #1f1f1f4b;
+body {
+  color: #34495e;
+}
+
+.clicked {
+  color: #7f8c8d;
 }
 
 .form,
 .greetings {
   display: none;
 }
+
 .showing {
   display: block;
 }

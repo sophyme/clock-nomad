@@ -1,7 +1,18 @@
+const API_KEY = "1b2e0db62cd96a7bf04069b332104fd1";
 const COORDS = 'coords';
 
+function saveCoords(coordsObj) {
+  localStorage.setItem(COORDS, JSON.stringify(coordsObj));
+}
+
 function handleGeoSuccess(position) {
-  console.log(position);
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  const coordsObj = {
+    latitude,
+    longitude
+  };
+  saveCoords(coordsObj); 
 }
 function handleGeoError() {
   console.log("Can't access geo location");

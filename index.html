@@ -5,18 +5,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
-    </div>
+    <h4 class="js-greetings greetings"></h4>
     <form class="js-form form">
       <input type="text" placeholder="what is your name?" />
     </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-
+    <div class="line">
+      <div class="js-clock">
+        <h1>00:00</h1>
+      </div>
+      <div class="todoline">
+        <label for="inp" class="inp">
+          <form class="js-toDoForm">
+            <input type="text" id="inp" placeholder="&nbsp;" />
+          </form>
+          <span class="label">TODO</span>
+          <span class="border"></span>
+          <ul class="js-toDoList"></ul>
+        </label>
+      </div>
+    </div>
     <span class="js-weather"></span>
     <script src="todo.js"></script>
     <script src="clock.js"></script>
